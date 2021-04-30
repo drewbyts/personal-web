@@ -1,5 +1,5 @@
-import React from 'react';
-import logo from './logo.jpg';
+import React from "react";
+import Logo from "src/@lekoarts/gatsby-theme-jodie/icons/logo.jpg";
 
 // TODOS: LOGO NAME ANIMATION...
 export default function Logo() {
@@ -9,7 +9,7 @@ export default function Logo() {
       height="105"
       style = {{borderRadius: 150, borderWidth: 2, borderColor: 'lightsteelblue', borderStyle: 'solid'}}
       fill={'primary'}
-      src={logo}
+      src={Logo}
       alt="logo"
     />
   );

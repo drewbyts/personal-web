@@ -1,7 +1,3 @@
-require(`dotenv`).config({
-  path: `.env`,
-})
-
 module.exports = {
   siteMetadata: {
     siteTitle: `Andrew Ramirez`,
@@ -17,6 +13,7 @@ module.exports = {
           
           { name: `About`, slug: `/about` },
         ],
+        homePageProjectLimit: "0",
       },
     },
     {
@@ -39,7 +36,7 @@ module.exports = {
         display: `standalone`,
         icons: [
           {
-            src: `/content/pages/about/Dec-4-Big Sur.jpg`,
+            src: `./content/pages/about/yosemite-me.jpeg`,
             sizes: `192x192`,
             type: `image/jpg`,
           },
