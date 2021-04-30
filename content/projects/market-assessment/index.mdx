@@ -1,0 +1,115 @@
+---
+title: "The 2020 Stock Market "
+shortTitle: "The Market in 2020"
+category: "Finance"
+color: "#59788E"
+cover: "./ishant-mishra-UXEJDX4SqdE-unsplash.jpg"
+date: "2021-04-28"
+---
+[Link to Report](https://drewbyts.github.io/Market-Analysis/)
+
+
+#### Background:
+
+2020 was quite a year for humans, consumers, and the stock market. 
+
+
+#### Question: 
+
+In a year with a pandemic, how did the market perform and what trends capitalized? 
+
+#### Action:   
+
+I proceded to analyze the performance of the stock market using ten of the major SPDR ETF's. 
+Additionally, I wanted to observe the correlation, if any, of select market sectors——and, identify
+the trends that made a splash or continued to make a splash in 2020. 
+
+
+
+##### R Packages Used:
+```{r}
+library(tidyverse)
+library(quantmod)
+library(tidyquant)
+library(xts)
+library(PerformanceAnalytics)
+library(gt)
+library(paletteer)
+library(htmltools)
+library(janitor)
+library(scales)
+library(lubridate)
+library(reactable)
+library(corrplot)
+library(corrr)
+library(hrbrthemes)
+library(ggcorrplot)
+library(ggsci)
+```
+
+#### ETF Performance
+The uncertainty and conviction of the market was at an all-time high in 2020; volatility 
+surged and it created intriguing month-to-month fluctuations. The table **below** 
+identifies the monthly return of ten Spyder (SPDR) ETFs and highlights the upheaval 
+that occurred in March and the hasty recovery in the successive months. 
+
+The total year-over-year (YoY) percent gain for all, but one of the ETFs, was 
+surprisingly positive. XLK (Tech), XLY(Consumer Discretionary), and 
+XLC (Communication Services) were the % YoY leaders, while XLE and XLF were the losers. 
+
+#### ETF Correlation
+We identified the degree to which funds are correlated. In a year where unemployment 
+skyrocketed, an oil crisis occured, and an election loomed, there were many 
+catalysts that shifted and transformed the mindset of investors and the market. 
+New relationships between sectors were discovered and existing relationships were strengthened. 
+The correlation plot **below** depicts the correlation coefficients of ten SPDR ETFs in 2020. 
+
+
+
+We observed that Financials and Industrials had the highest correlation, 
+while Utilities and Technology and Energy and Utilities had the lowest correlations. 
+XLE's relationship with each of the other ETFs is interesting. Prior to 2020, 
+XLE had been trading within a range. XLE's five year performance (as of January 1, 2021) 
+had been a net loss of 37%. However, it's performance over the last year was a net loss of 36%; 
+XLE did not have a great year.  
+
+
+#### Market Analysis
+ETFs aim to track specific industry sectors, XLK tracks the Tech sector, 
+while XLF tracks the Financial sector. To get a better sense of the 
+leading sectors in 2020, we were curious if trends played any part in the success
+ of the top-gaining sectors and companies within these sectors. We pinpointed trends 
+ that broke out and developed momentum in 2020 and found the following:
+
+* PC Gaming
+* D-I-Y and Gardening
+* Health and Sustainability
+* Working from Home (WFH)
+
+The trends observed had many qualities in common, the trends were more centered around 
+the individual, than the collective. Additionally, the trends had sector/stock counterparts. 
+Tech, consumer discretionary, and communication services companies embodied the characteristics of the trends. 
+In parallel, they stood to gain. Some of the companies that benefited in 2020 included: 
+
+* Tech (XLK): Adobe, Nvidia, Paypal
+* Consumer Discretionary (XLY): Amazon, Home Depot, and Target
+* Communication Services (XLC): Facebook, Alphabet, Netflix
+
+The companies listed, on top of being positioned well, had products and services that 
+tailored well to a pandemic-filled world. From touch-less payment software, 
+to home improvement, to over-the top streaming content. They were innovative; 
+they were adaptive. Trends that budded in 2020 may have helped to assist these sectors 
+notoriety in some way, but many of the companies increased their relevancy and made 
+inroads by offering products and services that consumers needed and wanted. 
+
+
+#### Conclusion
+From it being an election year and the breakout of a pandemic, 2020 had many 
+catalysts that shifted the outlook for the consumers, the economy and the stock market. 
+The report showcases the bullish run of the technology sector and the lackluster 
+performance of the energy sector (partly due to increasing concerns of climate 
+change and expectation of a new "greener" president). With a vaccine being available 
+(and in distribution across many states), and a new president being sworn in, we expect 
+the market to cool off post-February. Stock prices and market indexes have risen to 
+all-time highs and we believe the market has been fueled by ever-increasing euphoria, 
+positive vaccine news, and new-found stimulus checks.
