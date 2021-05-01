@@ -47,6 +47,7 @@ module.exports = {
         ],
       },
     },
+    "gatsby-plugin-theme-ui",
     `gatsby-plugin-offline`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-netlify`,
