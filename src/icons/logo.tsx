@@ -1,10 +1,8 @@
-import React from "react";
+import * as React from "react";
 import Logo from "./logo.jpg";
 
-// TODOS: LOGO NAME ANIMATION...
-export default function Logo() {
-  return (
-    <img
+const Logo = () => (
+  <img
       width="105"
       height="105"
       style = {{borderRadius: 150, borderWidth: 2, borderColor: 'lightsteelblue', borderStyle: 'solid'}}
@@ -12,5 +10,7 @@ export default function Logo() {
       src={Logo}
       alt="logo"
     />
-  );
-}
+);
+
+
+export default Logo
