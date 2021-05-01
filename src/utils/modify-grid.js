@@ -1,4 +1,4 @@
-import { ChildImageSharp } from "../types"
+import onlyPages  from "./content/pages"
 
 const modifyGrid = data => onlyPages(data)
 
