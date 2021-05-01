@@ -1,8 +1,9 @@
+import React from "react"
 import { jsx } from "theme-ui"
 
 type LayoutWrapperProps = { children: React.ReactNode }
 
-const LayoutWrapper = ({ children }: LayoutWrapperProps) => (
+const LayoutWrapper = ({children} : LayoutWrapperProps) => (
   <div
     sx={{
       display: `grid`,

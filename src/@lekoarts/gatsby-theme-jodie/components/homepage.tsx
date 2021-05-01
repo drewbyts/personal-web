@@ -22,8 +22,8 @@ pages: {
   }
 }
 
-const Homepage: React.FC<PageProps<DataProps>> = ({ data: {pages} }) => {
-  const rawItems = [pages.nodes]
+const Homepage: React.FC<PageProps<DataProps>> = ({ data: { pages, projects } }) => {
+  const rawItems = [...pages.nodes, ...projects.nodes]
   const items = modifyGrid(rawItems)
   const itemsCount = items.length
   let divisor = 9

@@ -1,8 +1,9 @@
+import React from "react"
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { readableColor } from "polished"
-import Logo from "../icons"
-import useSiteMetadata from "./hooks/use-site-metadata.tsx"
+import Logo from "../icons/logo"
+import useSiteMetadata from "../hooks/use-site-metadata"
 import Navigation from "./navigation"
 
 type SidebarProps = { bg: string }

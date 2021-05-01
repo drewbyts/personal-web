@@ -1,6 +1,7 @@
+import React from "react"
 import { jsx, Link, useThemeUI } from "theme-ui"
 import { readableColor } from "polished"
-import useSiteMetadata from "./hooks/use-site-metadata"
+import useSiteMetadata from "../hooks/use-site-metadata"
 
 const Footer = ({ bg }: { bg: string }) => {
   const { siteTitle } = useSiteMetadata()

@@ -1,13 +1,11 @@
-import * as React from "react";
-import logo from "./logo.jpg";
+import * as React from "react"
 
 const Logo = () => (
   <img
-      width="105"
-      height="105"
+      width="150"
+      height="150"
       style = {{borderRadius: 150, borderWidth: 2, borderColor: 'lightsteelblue', borderStyle: 'solid'}}
-      fill={"primary"}
-      src={Logo}
+      src={"src/@lekoarts/gatsby-theme-jodie/icons/logo.jpg"}
       alt="logo"
     />
 );

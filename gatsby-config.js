@@ -1,7 +1,12 @@
 module.exports = {
   siteMetadata: {
     siteTitle: `Andrew Ramirez`,
-      author: '@drewbyts',
+    siteTitleAlt: `Andrew's Personal Website`,
+    siteHeadline: `Sacramento, CA`,
+    siteDescription: `Personal Page for Andrew Ramirez`,
+    siteLanguage: `en`,
+    siteImage: `./content/pages/about/yosemite-me.jpeg`,
+    author: '@drewbyts',
   },
   plugins: [
     {
@@ -27,7 +32,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Andrew Ramirez`,
-        short_name: `andrew`,
+        short_name: `Andrew`,
         description: `Andrew Ramirez's personal website and portfolio`,
         start_url: `/`,
         background_color: `#FFFFF`,
