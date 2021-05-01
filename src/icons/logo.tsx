@@ -1,5 +1,5 @@
 import * as React from "react";
-import Logo from "./logo.jpg";
+import logo from "./logo.jpg";
 
 const Logo = () => (
   <img
@@ -11,6 +11,5 @@ const Logo = () => (
       alt="logo"
     />
 );
-
 
 export default Logo

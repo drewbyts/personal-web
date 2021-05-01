@@ -13,7 +13,6 @@ module.exports = {
           
           { name: `About`, slug: `/about` },
         ],
-        homePageProjectLimit: "0",
       },
     },
     {

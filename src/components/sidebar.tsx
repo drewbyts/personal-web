@@ -1,8 +1,7 @@
-/** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { readableColor } from "polished"
-import Logo from "./src/icons/logo.jpg"
+import Logo from "../icons"
 import useSiteMetadata from "./hooks/use-site-metadata.tsx"
 import Navigation from "./navigation"
 
