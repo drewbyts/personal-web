@@ -1,5 +1,5 @@
-import React from "react"
-import { jsx } from "theme-ui"
+/** @jsx jsx */
+import { jsx, useThemeUI } from 'theme-ui'
 import { Link } from "gatsby"
 import { readableColor } from "polished"
 import Logo from "../icons/logo"

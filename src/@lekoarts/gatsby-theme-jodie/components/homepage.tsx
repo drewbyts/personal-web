@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, useThemeUI } from 'theme-ui'
 import React from "react"
 import { PageProps } from "gatsby"
 import Img from "gatsby-image"
@@ -12,13 +12,21 @@ import { visuallyHidden } from "../styles/utils"
 import modifyGrid from "../utils/modify-grid"
 
 type DataProps = {
-pages: {
+  projects: {
+    nodes: {
+      slug: string
+      title: string
+      cover: ChildImageSharp
+      __typename: "MdxProject"
+    }[]
+  }
+  pages: {
     nodes: {
       slug: string
       title: string
       cover: ChildImageSharp
       __typename: "MdxPage"
-    }
+    }[]
   }
 }
 

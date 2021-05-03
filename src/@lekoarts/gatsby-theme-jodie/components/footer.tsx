@@ -1,5 +1,5 @@
-import React from "react"
-import { jsx, Link, useThemeUI } from "theme-ui"
+/** @jsx jsx */
+import { jsx, Link, useThemeUI } from 'theme-ui'
 import { readableColor } from "polished"
 import useSiteMetadata from "../hooks/use-site-metadata"
 
@@ -46,7 +46,7 @@ const Footer = ({ bg }: { bg: string }) => {
         by
         {` `}
         <Link aria-label="Link to the theme author's website" href="https://www.lekoarts.de/en">
-          Andrew
+          @drewbyts
         </Link>
       </div>
     </footer>

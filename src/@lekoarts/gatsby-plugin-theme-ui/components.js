@@ -1,3 +1,4 @@
+import {ThemeProvider} from `theme-ui`
 import Prism from "@theme-ui/prism"
 
 const components = {

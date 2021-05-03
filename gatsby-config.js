@@ -1,12 +1,14 @@
+  require(`dotenv`).config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     siteTitle: `Andrew Ramirez`,
-    siteTitleAlt: `Andrew's Personal Website`,
-    siteHeadline: `Sacramento, CA`,
-    siteDescription: `Personal Page for Andrew Ramirez`,
-    siteLanguage: `en`,
-    siteImage: `./content/pages/about/yosemite-me.jpeg`,
-    author: '@drewbyts',
+    siteTitleAlt: `Andrew Ramirez`,
+    siteHeadline: `Andrew Ramirez`,
+    siteDescription: `Personal Portfolio for Andrew Ramirez`,
+    author: `@drewbyts`,
   },
   plugins: [
     {
@@ -15,9 +17,10 @@ module.exports = {
       options: {
         navigation: [
           { name: `Projects`, slug: `/projects` },
-          
           { name: `About`, slug: `/about` },
         ],
+        basePath: `/`,
+        prismPreset: `prism-` 
       },
     },
     {
@@ -26,29 +29,29 @@ module.exports = {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
     },
-
-    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Andrew Ramirez`,
-        short_name: `Andrew`,
-        description: `Andrew Ramirez's personal website and portfolio`,
+        short_name: `Andrew Ramirez`,
+        description: `Andrew Ramirez Personal Website`,
         start_url: `/`,
-        background_color: `#FFFFF`,
+        background_color: `#ffffff`,
         theme_color: `#b75e09`,
         display: `standalone`,
         icons: [
           {
-            src: `./content/pages/about/yosemite-me.jpeg`,
+            src: `/content/pages/about/yosemite-me.jpeg`,
             sizes: `192x192`,
-            type: `image/jpg`,
+            type: `image/jpeg`,
           },
         ],
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-theme-ui`,
   ],
 }

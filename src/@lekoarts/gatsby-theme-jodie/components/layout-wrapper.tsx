@@ -1,4 +1,4 @@
-import React from "react"
+/** @jsx jsx */
 import { jsx } from "theme-ui"
 
 type LayoutWrapperProps = { children: React.ReactNode }
