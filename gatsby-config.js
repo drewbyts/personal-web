@@ -8,6 +8,7 @@ module.exports = {
     siteTitleAlt: `Andrew Ramirez`,
     siteHeadline: `Andrew Ramirez`,
     siteDescription: `Personal Portfolio for Andrew Ramirez`,
+    siteImage: `./logo.jpg`,
     author: `@drewbyts`,
   },
   plugins: [
