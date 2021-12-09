@@ -1,7 +1,7 @@
-Welcome to the code for my personal website. The home page has my picture, a Projects section, and an About section. 
+# Hello 👋
 
-* My picture can be used to revert back to the home page at any time. 
-* The Projects page houses personal projects I have completed. 
-* The About page is listed on the home page as a tile and as a navigational section. 
+## First Personal Page Project
 
-The website was used by shadowing a starter/theme - @lekoarts/gatsby-theme-jodie created by @Lekoarts.
+The repository houses code that was used to create my first personal page via Gatsby.
+
+To assist in the development the website was created by shadowing a theme - @lekoarts/gatsby-theme-jodie created by @Lekoarts.
